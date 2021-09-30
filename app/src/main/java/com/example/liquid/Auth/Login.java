@@ -1,25 +1,23 @@
-package com.example.liquid;
+package com.example.liquid.Auth;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.widget.Toast;
 
-public class SignUp extends AppCompatActivity {
+import com.example.liquid.R;
+
+public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.activity_login);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
 }

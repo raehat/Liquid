@@ -9,10 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Liquid">
-        <activity android:name=".SignUp"
-            android:parentActivityName=".FirstPage"></activity>
-        <activity android:name=".FirstPage" />
-        <activity android:name=".Splash">
+        <activity android:name=".HomePageFragments.Buy"></activity>
+        <activity android:name=".HomePage" />
+        <activity
+            android:name=".Auth.Login"
+            android:parentActivityName=".Auth.SignUp" />
+        <activity
+            android:name=".Auth.SignUp"
+            android:parentActivityName=".Auth.FirstPage" />
+        <activity android:name=".Auth.FirstPage" />
+        <activity android:name=".Auth.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

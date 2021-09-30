@@ -1,10 +1,12 @@
-package com.example.liquid;
+package com.example.liquid.Auth;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.liquid.R;
 
 public class Splash extends AppCompatActivity {
 
