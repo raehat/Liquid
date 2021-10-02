@@ -40,7 +40,7 @@ public class BuyShareAdapter extends RecyclerView.Adapter<BuyShareViewModel> {
         holder.corpName.setText(list.get(position).getCorpName());
         holder.companyName.setText(list.get(position).getCompanyName());
         holder.sharePrice.setText(String.valueOf(list.get(position).getSharePrice()));
-        holder.changeInPrice.setText(String.valueOf(list.get(position).getChangeInPrice()));
+        holder.changeInPrice.setText("₹" + String.valueOf(list.get(position).getChangeInPrice()));
         if (list.get(position).getChangeInPrice()>0) {
             holder.changeInPrice.setTextColor(Color.parseColor("#00ed00"));
         } else {

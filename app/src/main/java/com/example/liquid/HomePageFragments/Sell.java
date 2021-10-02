@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,16 +20,14 @@ import com.example.liquid.R;
 
 import java.util.ArrayList;
 
-public class Buy extends Fragment {
+public class Sell extends Fragment {
 
     RecyclerView recyclerView;
     ArrayList<BuyShareModel> list;
 
-    @Nullable
     @Override
-
-    public View onCreateView(@NonNull  LayoutInflater inflater, @Nullable  ViewGroup container, @Nullable  Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_buy, container, false);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.activity_sell, container, false);
 
         recyclerView = view.findViewById(R.id.recycler_view);
 
@@ -38,13 +37,7 @@ public class Buy extends Fragment {
 
         try {
             list.add(new BuyShareModel("TATA","Tata Steel Corp.",25,3));
-            list.add(new BuyShareModel("TATA","Tata Steel Corp.",25,3));
-            list.add(new BuyShareModel("TATA","Tata Steel Corp.",25,3));
-            list.add(new BuyShareModel("TATA","Tata Steel Corp.",25,3));
-            list.add(new BuyShareModel("TATA","Tata Steel Corp.",25,-3));
-            list.add(new BuyShareModel("TATA","Tata Steel Corp.",25,3));
-            list.add(new BuyShareModel("TATA","Tata Steel Corp.",25,-3));
-            list.add(new BuyShareModel("TATA","Tata Steel Corp.",25,-3));
+            list.add(new BuyShareModel("TATA","Tata Steel Corp.",25,-9));
             list.add(new BuyShareModel("TATA","Tata Steel Corp.",25,3));
         } catch (Exception e) {
             Toast.makeText(getContext(), "" + e.getMessage(), Toast.LENGTH_SHORT).show();

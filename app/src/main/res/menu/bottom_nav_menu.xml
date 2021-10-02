@@ -7,9 +7,11 @@
         android:icon="@drawable/ic_baseline_shopping_cart_24"
         android:title="Buy" />
     <item
+        android:id="@+id/sell_item"
         android:icon="@drawable/ic_baseline_attach_money_24"
         android:title="Sell" />
     <item
+        android:id="@+id/settings_item"
         android:icon="@drawable/ic_baseline_settings_24"
         android:title="Settings" />
 </menu>

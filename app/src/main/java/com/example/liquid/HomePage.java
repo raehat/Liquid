@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.liquid.HomePageFragments.Buy;
+import com.example.liquid.HomePageFragments.Sell;
+import com.example.liquid.HomePageFragments.Settings;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomePage extends AppCompatActivity {
@@ -20,8 +22,8 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
         bottomNavigationView = findViewById(R.id.bottom_nav);
-
-
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,
+                new Buy()).commit();
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -31,6 +33,13 @@ public class HomePage extends AppCompatActivity {
                         getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,
                             new Buy()).commit();
                         break;
+                    case R.id.sell_item:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,
+                                new Sell()).commit();
+                        break;
+                    case R.id.settings_item:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,
+                                new Settings()).commit();
                 }
                 return false;
             }

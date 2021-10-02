@@ -20,5 +20,5 @@
 
 
     <color name="button_backgroundColor">@color/white</color>
-
+    <color name="drawable_color">@color/white</color>
 </resources>

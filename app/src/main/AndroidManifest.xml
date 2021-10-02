@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Liquid">
-        <activity android:name=".HomePageFragments.Buy"></activity>
+        <activity android:name=".HomePageFragments.Settings"></activity>
+        <activity android:name=".HomePageFragments.Sell" />
+        <activity android:name=".HomePageFragments.Buy" />
         <activity android:name=".HomePage" />
         <activity
             android:name=".Auth.Login"
